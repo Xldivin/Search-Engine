@@ -83,5 +83,5 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
-  database: hj_search_production
+  url: "postgres://postgres_n5nt_user:s9DitNoiUvxomr7Cm12zo2PS9PdERnAY@dpg-cmbuinmn7f5s7393k1p0-a.oregon-postgres.render.com/postgres_n5nt"
+  database: search_engine_production

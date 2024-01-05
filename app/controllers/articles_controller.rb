@@ -15,10 +15,17 @@ class ArticlesController < ApplicationController
     else
       articles = Article.title_search(params[:query])
       render(partial: '/shared/home', locals: { articles: articles })
-      SaveQuerry.save(params[:query], session[:user_id], articles.length)
-      # SaveQuerry is a module in app/models/concerns/save_querry.rb
+  
+      begin
+        SaveQuerry.save(params[:query], session[:user_id], articles.length)
+      rescue StandardError => e
+        flash[:error] = "Error occurred while saving query: #{e.message}"
+        # You can log the error for further investigation if needed
+        Rails.logger.error("Error saving query: #{e.message}")
+      end
     end
   end
+  
 
   private
 

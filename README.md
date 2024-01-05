@@ -6,24 +6,6 @@
 
 </div>
 
-<!-- TABLE OF CONTENTS -->
-
-# 📗 Table of Contents
-
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [Search Engine] <a name="about-project"></a>
@@ -38,13 +20,6 @@ This full-stack web app functions as a real-time search engine, offering users a
     <li>Hotwire</li>
      <li>CSS</li>
      <li>ERB</li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li>PUMA</li>
   </ul>
 </details>
 
@@ -101,7 +76,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:BertrandConxy/hj-search.git
+  git clone https://github.com/Xldivin/Search-Engine.git
 ```
 
 ### Install
@@ -132,11 +107,6 @@ $ rails server
  - Open [http://localhost:3000/](http://localhost:3000/) in your browser
 ```
 
-### Run linters
-```
-rubocop -A
-```
-
 ### Run tests
 
 ```bash
@@ -161,13 +131,4 @@ $ rspec spec/folder_name/name_of_test_file.rb
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **Realtime Searching**
-- [ ] **Article listing**
-- [ ] **Analytics**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
